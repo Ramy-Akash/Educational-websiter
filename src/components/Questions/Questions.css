@@ -1,0 +1,133 @@
+.questions-div {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 70px 0px 70px;
+    gap: 150px;
+}
+
+.questions-left {
+    display: flex;
+    flex-direction: column;
+    width: 385px;
+    gap: 30px;
+}
+
+.questions-left p {
+    font-family: "Poppins", serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 45px;
+    text-align: left;
+    color: #D9ECFF;
+}
+
+.questions-left h2 {
+    font-family: "KoHo", serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+    color: white;
+}
+
+.questions-left button {
+    width: 200px;
+    border: none;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #FAB437;
+    color: white;
+    cursor: pointer;
+}
+
+.questions-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 60%;
+}
+
+.questions-right h3 {
+    color: #D9ECFF;
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+}
+
+.colls {
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.collapsible {
+    background-color: #142941;
+    border: none;
+    color: gray;
+    font-size: 17px;
+    float: right;
+}
+
+.active, .collapsible:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.coll-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    float: inline-end;
+}
+
+.coll-content p {
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #D9ECFF;
+}
+
+
+@media (max-width: 1024px) {
+    .questions-div {
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 50px;
+    }
+    .questions-left {
+        width: 100%;
+    }
+    .questions-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .questions-left p {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .questions-left h2 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .questions-left button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .questions-left p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .questions-left h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .questions-right h3 {
+        font-size: 18px;
+    }
+}

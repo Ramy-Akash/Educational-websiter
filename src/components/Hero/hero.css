@@ -1,0 +1,135 @@
+* {
+    font-family: "KoHo", sans-serif;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    gap: 100px;
+}
+
+.hero img:nth-child(1),
+.hero img:nth-child(2) {
+    width: 260px;
+}
+
+span {
+    color: #FAB437;
+    text-decoration: underline;
+}
+
+.hero-components {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    gap: 50px;
+    width: 31vw;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+}
+
+.inp-div {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.inp {
+    background-color: #3D4E64;
+    width: 480px;
+    height: 66px;
+    border-radius: 50px;
+    border: none;
+    padding: 0 20px;
+}
+
+.inp-btn {
+    background-color: #FAB437;
+    border-radius: 47px;
+    border: none;
+    box-shadow: 0px 1px 2px 0px #1018280D;
+    width: 125px;
+    position: absolute;
+    height: 55px;
+    bottom: 6px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 50px;
+        gap: 50px;
+    }
+
+    .inp {
+        width: 350px;
+        height: 55px;
+    }
+
+    .inp-btn {
+        width: 100px;
+        height: 45px;
+        bottom: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .hero img:nth-child(1),
+    .hero img:nth-child(2) {
+        width: 180px;
+    }
+
+    .hero-components {
+        width: 80vw;
+    }
+
+    .inp {
+        width: 300px;
+        height: 50px;
+    }
+
+    .inp-btn {
+        width: 90px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 20px;
+    }
+
+    .hero img:nth-child(1),
+    .hero img:nth-child(2) {
+        width: 150px;
+    }
+
+    .hero-components {
+        gap: 30px;
+        font-size: medium;
+    }
+
+    .inp {
+        width: 250px;
+        height: 45px;
+    }
+
+    .inp-btn {
+        width: 80px;
+        height: 35px;
+    }
+}

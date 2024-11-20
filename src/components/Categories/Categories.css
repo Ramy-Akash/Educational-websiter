@@ -1,0 +1,145 @@
+.section-categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.categories-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.categories-header h1 {
+    color: white;
+    font-family: "KoHo", serif;
+}
+
+.categories-header p {
+    color: #D9ECFF;
+    font-family: "Poppins", serif;
+}
+
+.whole-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #364C65;
+    border: solid #DADAF780;
+    border-radius: 20px;
+    gap: 15px;
+    width: 200px;
+    height: 190px;
+    color: #D9ECFF;
+    
+}
+
+.card:hover {
+    padding-bottom: 15px;
+    background-color: gray;
+    transition: 0.3s;
+}
+
+.card{
+    i{
+        font-size: 30px;
+         color: orange;
+         cursor: pointer;
+    }
+}
+
+/* .whole-container {
+    i:nth-child(1){
+        color: white;
+        cursor: pointer;
+        font-size: large;
+    }
+} */
+.arrows{
+    color: white;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+
+@media (max-width: 1024px) {
+    .cards-container {
+        gap: 15px;
+    }
+
+    .card {
+        width: 180px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 768px) {
+    .whole-container {
+        gap: 10px;
+    }
+
+    .cards-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 160px;
+        height: 150px;
+    }
+
+    .categories-header h1 {
+        font-size: 1.5em;
+    }
+
+    .categories-header p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .whole-container {
+        flex-direction: column;
+    }
+
+    .categories-header h1 {
+        font-size: 1.3em;
+    }
+
+    .categories-header p {
+        font-size: 0.8em;
+    }
+
+    .cards-container {
+        gap: 10px;
+    }
+
+    .card {
+        width: 140px;
+        height: 130px;
+    }
+
+    .card i {
+        font-size: 25px;
+    }
+
+    .whole-container i {
+        font-size: medium;
+    }
+}
